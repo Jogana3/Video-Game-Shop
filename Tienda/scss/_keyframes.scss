@@ -1,0 +1,27 @@
+@keyframes aparecerNav {
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes aparecerItems {
+    100%{
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+@keyframes neonAnim {
+    from {
+        text-shadow:
+          0 0 10px rgba(239, 4, 4, .7),
+          0 0 40px rgba(239, 4, 4, .7),
+          0 0 100px rgba(239, 4, 4, .7);
+      }
+      to {
+        text-shadow:
+          0 0 5px rgba(239, 4, 4, .7),
+          0 0 20px rgba(239, 4, 4, .7),
+          0 0 60px rgba(239, 4, 4, .7);
+      }
+}

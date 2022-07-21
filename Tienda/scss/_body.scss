@@ -1,0 +1,26 @@
+@import'colors-variable';
+
+body{
+    background-color: $body-bck-color;
+    padding: 15px;
+    display: grid; 
+    grid-template-columns: 19.4% 61.2% 19.4%; 
+    grid-template-rows: 3.6% 30.5% 6.5% 6.5% auto 16.5%;
+    gap: 15px 0px;
+    grid-template-areas: 
+      "nav nav nav"
+      ". pres-title ."
+      ". presentation ."
+      ". . ."
+      "products products title"
+      "footer footer footer"
+      "footer footer footer";
+      
+}
+
+.head { grid-area: nav; }
+.presentation { grid-area: presentation; }
+.products { grid-area: products; }
+.list-title { grid-area: title;
+justify-self: center; }
+.footer { grid-area: footer; }

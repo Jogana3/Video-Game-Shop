@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Shop</title>
+    <link rel="shortcut icon" href="/img/joystick.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header class="head">
+        <nav class="navigator">
+            <ul class="menu">
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="#contact">Contact</a></li>
+                <li class="item"><a href="#psList">PlayStation</a></li>
+                <li class="item"><a href="#pcList">PC</a></li>
+                <li class="item"><a href="#xboxList">Xbox</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="pres-title">Game Shop Website</h1>
+    <section class="wow animate__animated animate__zoomIn presentation" data-wow-duration="0.5s">
+        <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, molestiae veniam vero quos aut minima alias. Reiciendis, neque aperiam. Quia corrupti autem repudiandae a, laudantium obcaecati officiis omnis vero tempore.</p>
+    </section>
+    <main class="products">
+        <div class="list-games">
+            <div class="pc-container">
+                <div id="pcList" class="wow animate__animated animate__fadeInLeft pc-games" data-wow-duration="1s">
+                    <div platform="pc" id="pcSlide" class="slide">
+
+                    </div>
+                    <button class="forward">>></button>
+                    <button class="back"><<</button>
+                </div>
+                <img class="wow animate__animated animate__fadeInRight img-pc" data-wow-duration="1s" src="/img/pc.svg" alt="pc">
+            </div>
+            <div class=" ps-container">
+                <div id="psList" class="wow animate__animated animate__fadeInRight ps-games" data-wow-duration="1s">
+                    <div platform="ps" id="psSlide" class="slide">
+                        
+                    </div>
+                    <button class="forward">>></button>
+                    <button class="back"><<</button>
+                </div>
+                <img class="wow animate__animated animate__fadeInLeft img-ps" src="/img/ps.svg" alt="" data-wow-duration="1s">
+            </div>
+            <div class="xbox-container">
+                <div id="xboxList" class="wow animate__animated animate__fadeInLeft xbox-games" data-wow-duration="1s">
+                    <div platform="xbox" id="xboxSlide" class="slide">
+                        
+                    </div>
+                    <button class="forward">>></button>
+                    <button class="back"><<</button>
+                </div>
+                <img class="wow animate__animated animate__fadeInRight img-xbox" src="/img/xbox.svg" alt="" data-wow-duration="1s">
+            </div>
+        </div>
+    </main>
+    <section class="list-title">
+        <span class="title">List</span>
+        <span class="title">Of</span>
+        <span class="title">Games</span>
+    </section>
+    <section id="productsCart" class="animate__animated animate__zoomIn cart" data-wow-duration="0.5s">
+        <img class="cart-img" src="./img/cart.png" alt="">
+    </section>
+    <section class="show-cart">
+        <button id="btnBuy" class="btn-buy">BUY</button>
+    </section>
+    <footer id="contact" class="footer">
+        <section class="contact-info">
+            <h2 class="contact-title">Contact</h2>
+            <div class="contact-container">
+                <div class="contact-item">
+                    <img class="contact-img" src="./img/mail.svg" alt="">
+                    <p class="contact-text">
+                        Mail: 
+                    </p>
+                    <a class="contact-link" href="mailto:nahuelgodoy@gmail.com">nahuelgodoy2001@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <img class="contact-img" src="./img/linkedin.svg" alt="">
+                    <p class="contact-text">
+                        Linkedin:
+                    </p>
+                    <a class="contact-link" href="https://www.linkedin.com/in/nahuel-godoy/">Nahuel Godoy</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+</body>
+</html>

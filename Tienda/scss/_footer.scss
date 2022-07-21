@@ -1,0 +1,37 @@
+.footer{
+    background-color: $grey-background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-link{
+    color: rgb(186, 7, 7);
+    margin-left: auto;
+}
+
+.contact-item{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px;
+}
+
+.contact-img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    object-fit: contain;
+}
