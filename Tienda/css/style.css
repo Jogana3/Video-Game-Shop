@@ -536,8 +536,8 @@ li.item:nth-child(3) a {
     left: 10%;
   }
   body {
-    grid-template-columns: 19.4% 61.2% 19.4%;
-    grid-template-rows: 3.6% 20.5% 10.5% 10.5% auto 16.5%;
+    grid-template-columns: 15.4% 71.2% 15.4%;
+    grid-template-rows: 3.6% 20.5% 7.5% 10.5% auto 16.5%;
     grid-template-areas: "nav nav nav" ". pres-title ." ". presentation ." "title title title" "products products products" "footer footer footer" "footer footer footer";
   }
   .list-title {
@@ -548,13 +548,19 @@ li.item:nth-child(3) a {
     font-size: 3rem;
   }
   .pres-title {
-    font-size: 3.5rem;
+    font-size: 2.6rem;
+    word-break: break-word;
   }
   .footer {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 @media screen and (min-width: 500px) {
+  body {
+    grid-template-columns: 15.4% 71.2% 15.4%;
+    grid-template-rows: 3.6% 20.5% 7.5% 10.5% auto 16.5%;
+    grid-template-areas: "nav nav nav" ". pres-title ." ". presentation ." "title title title" "products products products" "footer footer footer" "footer footer footer";
+  }
   .pc-games, .ps-games, .xbox-games {
     width: 250px;
   }
@@ -579,11 +585,6 @@ li.item:nth-child(3) a {
   .back {
     left: 10%;
   }
-  body {
-    grid-template-columns: 19.4% 61.2% 19.4%;
-    grid-template-rows: 3.6% 20.5% 10.5% 10.5% auto 16.5%;
-    grid-template-areas: "nav nav nav" ". pres-title ." ". presentation ." "title title title" "products products products" "footer footer footer" "footer footer footer";
-  }
   .list-title {
     flex-direction: row;
     margin: 30px;
@@ -592,7 +593,7 @@ li.item:nth-child(3) a {
     font-size: 4rem;
   }
   .pres-title {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -680,5 +681,8 @@ li.item:nth-child(3) a {
   .list-title {
     flex-direction: column;
     margin: 0;
+  }
+  .navigator {
+    height: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
