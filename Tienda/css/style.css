@@ -201,8 +201,8 @@ li.item:nth-child(3) a {
 .des {
   width: 80%;
   color: rgb(236, 176, 176);
-  font-size: 0.85rem;
-  word-break: break-all;
+  font-size: 0.9rem;
+  word-break: break-word;
 }
 
 .pres-title {
@@ -268,8 +268,8 @@ li.item:nth-child(3) a {
   box-shadow: 0 0 10px 0 rgba(239, 4, 4, 0.5);
   background-color: #221f1f;
   z-index: 100;
-  -webkit-animation: slideInUp 0.3s;
-          animation: slideInUp 0.3s;
+  -webkit-animation: fadeInUp 0.3s;
+          animation: fadeInUp 0.3s;
 }
 
 .cart-list {

@@ -185,21 +185,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if(sectionShow.style.display == 'none' || firstTime === true){
             sectionShow.style.display = 'flex'
+            sectionShow.style.animation = 'fadeInUp 0.3s'
             firstTime = false
         }else{
+            sectionShow.style.animation = 'fadeOutDown 0.3s'
+            setTimeout(() => {
             sectionShow.style.display = 'none'
+            }, 300)
         }
 
         btnBuy.addEventListener('click', () => {
         let precioTotal = 0
-        let link = `https://api.whatsapp.com/send?phone=+351915211401&text=Hola%20queria%20comprar%20`
+        let link = `https://api.whatsapp.com/send?phone=+351915211401&text=Hi%20I'd%20like%20to%20buy%20`
 
         cart.forEach(game => {
-            link += game.buyGameName+'%20para%20'+game.buyGamePlatform+',%20'
+            link += game.buyGameName+'%20for%20'+game.buyGamePlatform+',%20'
             precioTotal += parseFloat(game.buyGamePrice)
         })
 
-        link += 'con%20un%20precio%20total%20de%20'+precioTotal+'$'
+        link += 'with%20a%20total%20price%20of%20'+precioTotal+'$'
         window.open(link)
         })
 
